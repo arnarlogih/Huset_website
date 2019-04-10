@@ -26,6 +26,15 @@ header {
     position: sticky;
 }
 
+.lang{
+    float: right;
+        color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
 ul {
     list-style: none;
 }
@@ -61,8 +70,6 @@ a:hover{
 .openSection {
     height: 100vh;
 }
-
-
 
 .logo {
     position: absolute;
@@ -103,6 +110,7 @@ position:absolute;
     justify-content: center;
     align-items: center;
 }
+
 .event {
     margin: 0 auto;
     max-width: 1200px;
@@ -110,6 +118,31 @@ position:absolute;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     grid-gap: 40px;
 }
+.burger-bar{
+    padding: 1.5em;
+    font-size: 2em;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    left: 0;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+.show-menu{
+    display: block;
+}
+
+.close-btn{
+    width: 60px;
+    transform: rotate(90deg);
+    float: right;
+    cursor: pointer;
+}
+
+
 
 .eventcard{
     height: 280px;
@@ -138,7 +171,9 @@ position:absolute;
     font-size: 1.5em;
     margin-bottom: 15px;
 }
-
+.menu-btn{
+       cursor: pointer;
+}
 .arrow{
     display: none;
     position: absolute;
@@ -147,9 +182,6 @@ position:absolute;
     width: 80px;
 }
 
-.burger-bar {
-    display: none;
-}
  input[type=search]{
      font-size: 1.5em;
      padding: 2em;
@@ -168,9 +200,6 @@ position:absolute;
     .nav-bar{
         display: none;
     }
-    .burger-bar {
-    display: none;
-}
     .openImage img {
         height: 50vh;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
