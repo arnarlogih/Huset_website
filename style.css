@@ -117,6 +117,10 @@ position:absolute;
     box-shadow:   -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
+.eventcard:hover{
+     box-shadow:   -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.30);
+}
 .eventImage{
       border-radius: 10px 10px 0 0;
     width: 100%;
