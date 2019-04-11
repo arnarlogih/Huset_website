@@ -10,20 +10,22 @@
 
 <header class="header">
 
-   <a> <img class="arrow menu-btn" id="open-menu" src="img/burger_menu.svg" alt="arrow"></a>
+        <img class="arrow open-btn" src="img/burger_menu.svg" alt="H Menu logo">
+        <img class="arrow close-btn hide" src="img/burger_menu.svg" alt="H Menu logo">
+
+        <div class="overlay hide">
+                <nav>
+                    <ul class="burger-bar" id="overlay">
+                        <li> <a href="#">Events</a></li>
+                        <li> <a href="#">Volunteer</a></li>
+                        <li> <a href="#">Make Events</a></li>
+                        <li> <a href="#">About</a></li>
+                        <li> <a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
 
     <div class="headerContent">
-        <nav>
-            <ul class="burger-bar" id="overlay">
-                <a><img src="img/burger_menu.svg" class="close-btn" id="close-btn"></a>
-                <li> <a href="#">Events</a></li>
-                <li> <a href="#">Volunteer</a></li>
-                <li> <a href="#">Make Events</a></li>
-                <li> <a href="#">About</a></li>
-                <li> <a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
 
         <div>
             <ul class="nav-bar">
@@ -167,15 +169,15 @@
         </div>
 
         <img class="mobilelogo" src="img/mobile_logo.svg" alt="mobilelogo">
-        <input class="searchbar" type="search" name="search" placeholder="&#128269;     Find what you are looking for">
+        <input type="search" name="Search" class="search" placeholder="&#128269;     Find what you are looking for">
 
     </section>
 
-    <section class="eventTitle">
+    <section class="eventTitle" id="events">
         <h2>Upcoming Events</h2>
     </section>
 
-    <section class="event" id="events">
+    <section class="event">
         <article class="eventcard">
             <img class="eventImage" src="img/concert.jpeg" alt="concert">
             <div class="articlecontent">
@@ -233,6 +235,10 @@
 
 
     </section>
+
+    <footer>
+
+    </footer>
 
 </body>
 <script src="javascript.js"></script>
