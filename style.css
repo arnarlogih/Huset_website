@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Avenir-Regular;
+    src: url("font/AvenirNext-Regular-08.ttf");
+  }
+
+  @font-face {
+    font-family: Avenir-bold;
+    src: url("font/AvenirNext-DemiBold-03.ttf");
+  }
+
 * {
     transition: 0.2s ease-in;
     padding: 0;
@@ -5,10 +15,14 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Avenir-Regular', sans-serif;
     background-color: #fff !important;
     color: #262424;
     width: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Avenir-bold', sans-serif;
 }
 
 header {
@@ -154,7 +168,7 @@ a:hover {
 }
 
 .eventcard {
-    height: 280px;
+    height: 300px;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
