@@ -90,10 +90,6 @@ a:hover {
 }
 
 .mobilelogo {
-    position: absolute;
-    top: 200px;
-    ;
-    left: 35%;
     display: none;
 }
 
@@ -257,6 +253,7 @@ footer {
     }
 
     .search {
+        top: 85vh;
         font-size: 1em;
     }
 
