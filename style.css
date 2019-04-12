@@ -50,6 +50,7 @@ header {
 }
 
 .lang {
+    cursor: pointer;
     float: right;
     color: black;
     text-align: center;
@@ -252,7 +253,12 @@ footer {
     height: 200px;
     width: 100%;
     margin-top: 200px;
+    text-align: center;
 }
+.footercontent{
+    padding-top: 100px;
+}
+
 
 @media screen and (max-width: 772px) {
 
