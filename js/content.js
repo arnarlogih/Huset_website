@@ -2,12 +2,14 @@ let fetchData = 'http://kea.sigurdarson.is/wp-huset/wp-json/wp/v2/concert?_embed
 const template = document.querySelector('template').content;
 const parent = document.querySelector('.event');
 
+//Loading data from the link
 function loadData(link) {
     fetch(link)
         .then(e => e.json())
         .then(data => show(data));
 }
 
+//Using For each loop to select each element from the category (Concerts)
 function show(data) {
     data.forEach(data => {
         //console.log(data._embedded)
