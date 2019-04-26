@@ -12,15 +12,20 @@ function loadData(link) {
 //Using For each loop to select each element from the category (Concerts)
 function show(data) {
     data.forEach(data => {
-        //console.log(data._embedded)
+        //console.log(data)
         //cloning
         const clone = template.cloneNode(true);
         //Inserting content
-        const eventImage = clone.querySelector('article img')
-        const eventType = clone.querySelector('article div .eventType')
+        const articleLink = clone.querySelector('a');
+        const eventImage = clone.querySelector('article img');
+        const eventType = clone.querySelector('article div .eventType');
         const title = clone.querySelector('article div h3');
-        const eventDate = clone.querySelector('article div .date')
-        const eventPrice = clone.querySelector('article div div p')
+        const eventDate = clone.querySelector('article div .date');
+        const eventPrice = clone.querySelector('article div div p');
+
+        //Sending to subpage 
+        articleLink.href = 'event.html?id=' + data.id;
+
 
         //Event Image
         eventImage.src = data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
