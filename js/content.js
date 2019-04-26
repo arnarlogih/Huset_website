@@ -1,4 +1,4 @@
-let fetchData = 'http://kea.sigurdarson.is/wp-huset/wp-json/wp/v2/concert?_embed';
+let fetchData = 'http://kea.sigurdarson.is/wp-huset/wp-json/wp/v2/volunteer?_embed';
 const template = document.querySelector('template').content;
 const parent = document.querySelector('.event');
 
@@ -12,7 +12,7 @@ function loadData(link) {
 //Using For each loop to select each element from the category (Concerts)
 function show(data) {
     data.forEach(data => {
-        //console.log(data._embedded)
+        console.log(data)
         //cloning
         const clone = template.cloneNode(true);
         //Inserting content
@@ -27,11 +27,11 @@ function show(data) {
         //Event type
         eventType.textContent = data.event_type;
         //Event title
-        title.textContent = data.band_name;
+        title.textContent = data.event_name;
         //Event Date
         eventDate.textContent = data.date_and_time;
         //Event Price
-        eventPrice.textContent = data.price;
+        eventPrice.textContent = data.volunteer;
         //appending it to the main
         parent.appendChild(clone);
     });
