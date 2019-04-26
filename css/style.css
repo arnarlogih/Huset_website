@@ -116,7 +116,7 @@ a:hover {
     object-fit: cover;
     height: 100vh;
     width: 100%;
-    -webkit-clip-path: polygon(88% 0, 100% 0, 100% 100%, 69% 100%);
+    -webkit-clip-path: polygon(69% 0, 100% 0, 100% 100%, 50% 100%);
     clip-path: polygon(69% 0, 100% 0, 100% 100%, 50% 100%);
 }
 
@@ -169,6 +169,7 @@ a:hover {
 }
 
 .eventcard {
+    cursor: pointer;
     position: relative;
     height: 320px;
     border-radius: 10px;
@@ -180,21 +181,19 @@ a:hover {
     position: absolute;
     bottom: 25px;
     left: 25px;
-}
-
-.bookmark {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    cursor: pointer;
     opacity: .5;
 }
 
-.bookmark:hover {
-    opacity: 1;
+.price {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    opacity: .5;
 }
 
-
+.eventType {
+    opacity: .5;
+}
 
 .eventcard:hover {
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.15);
@@ -246,6 +245,7 @@ a:hover {
     border: none;
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    -webkit-appearance: textfield;
 }
 
 footer {
@@ -255,7 +255,8 @@ footer {
     margin-top: 200px;
     text-align: center;
 }
-.footercontent{
+
+.footercontent {
     padding-top: 100px;
 }
 
