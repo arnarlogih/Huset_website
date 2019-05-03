@@ -12,7 +12,7 @@ function loadData(link) {
 //Using For each loop to select each element from the category (Concerts)
 function show(data) {
     data.forEach(data => {
-        //console.log(data._embedded)
+        console.log(data)
         //cloning
         const clone = template.cloneNode(true);
         //Inserting content
