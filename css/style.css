@@ -139,7 +139,9 @@ a:hover {
     text-align: justify;
     padding-left: 300px;
     padding-right: 300px;
+    line-height: 25px;
 }
+
 
 .burger-bar {
     padding: 1.5em;
@@ -301,6 +303,10 @@ footer {
     .event {
         margin: 1.5em;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    .paragraph{
+        padding-left: 3em;
+        padding-right: 3em;
     }
 
 }
