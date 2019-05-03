@@ -141,6 +141,10 @@ a:hover {
     padding-right: 300px;
     line-height: 25px;
 }
+.paragraph a{
+    color:  #ff0000;
+    text-decoration: none;
+}
 
 
 .burger-bar {
