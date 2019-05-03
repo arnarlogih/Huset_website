@@ -135,6 +135,12 @@ a:hover {
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     grid-gap: 40px;
 }
+.paragraph{
+    padding-left: 180px;
+    padding-right: 180px;
+    text-align: justify;
+}
+
 
 .burger-bar {
     padding: 1.5em;
