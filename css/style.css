@@ -83,6 +83,11 @@ a:hover {
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
 
+.headerWhite {
+    background-color: #fff;
+    position: static;
+}
+
 /*FRONTPAGE*/
 
 .openSection {
@@ -258,6 +263,59 @@ footer {
 
 .footercontent {
     padding-top: 100px;
+}
+
+/* event details page */
+
+
+.eventDetailsImage {
+    height: 50vh;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.eventDetailsImage img {
+    width: 100%;
+    position: absolute;
+    opacity: 0.75;
+    object-fit: cover;
+}
+
+.eventDetailsImage h1 {
+    z-index: 10;
+    color: #fff;
+    text-shadow: 5px 5px 30px #00000025;
+}
+
+.eventDetails {
+    margin-top: 100px;
+}
+
+.eventDetailsTitle {
+    font-size: 3em;
+}
+
+.eventDetailsType {
+    text-align: center;
+}
+
+.eventDetailsDate {
+    text-align: center;
+}
+
+.eventDetailsDescription {
+    padding-top: 100px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.articleLink {
+    color: #262424;
+    text-decoration: none;
 }
 
 
