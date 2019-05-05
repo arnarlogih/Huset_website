@@ -16,8 +16,8 @@
 
 body {
     font-family: 'Avenir-Regular', sans-serif;
-    background-color: #fff !important;
-    color: #262424;
+    background-color:#262F36!important;
+    color: #EFEFEF;
     width: 100%;
 }
 
@@ -41,7 +41,7 @@ header {
 
 .headerMobileOpen {
     height: 100vh;
-    background: #fff;
+    background: #262F36;
 }
 
 .headerContent {
@@ -52,19 +52,21 @@ header {
 .lang {
     cursor: pointer;
     float: right;
-    color: black;
+    color: #FEFEFE;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-
+a{
+    text-decoration: none;
+}
 ul {
     list-style: none;
 }
 
 .nav-bar a {
-    color: black;
+    color: #EFEFEF;
     float: left;
     text-align: center;
     padding: 14px 16px;
@@ -78,7 +80,7 @@ a:hover {
 
 .scrolled {
     position: fixed;
-    background-color: #fff;
+    background-color: #262F36;
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
@@ -113,6 +115,7 @@ a:hover {
 }
 
 .openImage img {
+    opacity: .8;
     object-fit: cover;
     height: 100vh;
     width: 100%;
@@ -120,6 +123,31 @@ a:hover {
     clip-path: polygon(69% 0, 100% 0, 100% 100%, 50% 100%);
 }
 
+.eventName{
+    letter-spacing: 5px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BandEvent{
+    padding: 1em;
+}
+.bandImage{
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .bandBanner{
+      text-align: center;
+      padding: 2em;
+  }
+  .spotify{
+    box-shadow: 10px 10px 50px 0px rgb(0, 0, 0);
+  }
 .eventTitle {
     height: 200px;
     width: 100%;
@@ -127,7 +155,12 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-
+.buy{
+    cursor: pointer;
+    font-weight: 700;
+    color: #ff0000;
+    float: right;
+}
 .event {
     margin: 0 auto;
     max-width: 1200px;
@@ -140,6 +173,10 @@ a:hover {
     padding-left: 300px;
     padding-right: 300px;
     line-height: 25px;
+}
+.paragraph a{
+    color:  #ff0000;
+    text-decoration: none;
 }
 
 
@@ -163,7 +200,7 @@ a:hover {
 }
 
 .overlay a {
-    color: #262424;
+    color: #FEFEFE;
     text-decoration: none;
 }
 
@@ -176,11 +213,15 @@ a:hover {
 }
 
 .eventcard {
+    background-color: #FEFEFE;
     position: relative;
     height: 320px;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.eventcard p, h3{
+    color: #262F36
 }
 
 .date {
@@ -237,10 +278,18 @@ a:hover {
     float: left;
     z-index: 999;
 }
+.back{
+    display: none;
+    width: 40px;
+    cursor: pointer;
+    padding: 2.5em;
+    float: left;
+    z-index: 999;
+}
 
 .search {
     cursor: pointer;
-    color: #26242450;
+    color: #262F36
     padding: 2em;
     font-size: 1.5em;
     top: 80vh;
