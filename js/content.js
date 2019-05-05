@@ -8,3 +8,13 @@ subscribeOpen.addEventListener('click', function(){
   overlayMenu.classList.add('showForm');
   formSelect.classList.remove('disable');
 })
+
+function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(55.676606,12.574734),
+    zoom:5,
+  };
+  var map = new google.maps.Map(document.getElementById("map"),mapProp);
+  }
+
+
