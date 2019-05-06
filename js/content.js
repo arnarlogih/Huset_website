@@ -1,45 +1,20 @@
-let fetchData = 'http://kea.sigurdarson.is/wp-huset/wp-json/wp/v2/concert?_embed';
-const template = document.querySelector('template').content;
-const parent = document.querySelector('.event');
+//contact window
+let overlayMenu = document.querySelector('#content');
+let subscribeOpen = document.querySelector('#button');
+let formSelect = document.querySelector('#form');
+let subscribeClose = document.querySelector('#subscribe');
 
-//Loading data from the link
-function loadData(link) {
-    fetch(link)
-        .then(e => e.json())
-        .then(data => show(data));
-}
+subscribeOpen.addEventListener('click', function(){
+  overlayMenu.classList.add('showForm');
+  formSelect.classList.remove('disable');
+})
 
-//Using For each loop to select each element from the category (Concerts)
-function show(data) {
-    data.forEach(data => {
-        //console.log(data)
-        //cloning
-        const clone = template.cloneNode(true);
-        //Inserting content
-        const articleLink = clone.querySelector('a');
-        const eventImage = clone.querySelector('article img');
-        const eventType = clone.querySelector('article div .eventType');
-        const title = clone.querySelector('article div h3');
-        const eventDate = clone.querySelector('article div .date');
-        const eventPrice = clone.querySelector('article div div p');
-
-        //Sending to subpage 
-        articleLink.href = 'event.html?id=' + data.id;
+function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(55.676606,12.574734),
+    zoom:5,
+  };
+  var map = new google.maps.Map(document.getElementById("map"),mapProp);
+  }
 
 
-        //Event Image
-        eventImage.src = data._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
-        //Event type
-        eventType.textContent = data.event_type;
-        //Event title
-        title.textContent = data.band_name;
-        //Event Date
-        eventDate.textContent = data.date_and_time;
-        //Event Price
-        eventPrice.textContent = data.price;
-        //appending it to the main
-        parent.appendChild(clone);
-    });
-}
-
-loadData(fetchData);
