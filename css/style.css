@@ -16,7 +16,7 @@
 
 body {
     font-family: 'Avenir-Regular', sans-serif;
-    background-color:#FEFEFE!important;
+    background-color:#EFEFEF!important;
     color:#262F36;
     width: 100%;
 }
@@ -58,7 +58,7 @@ header {
 .lang {
     cursor: pointer;
     float: right;
-    color: #FEFEFE;
+    color: #EFEFEF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -86,7 +86,7 @@ a:hover {
 
 .scrolled {
     position: fixed;
-    background-color: #FEFEFE;
+    background-color: #EFEFEF;
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
@@ -239,6 +239,7 @@ text-shadow: 20px 12px 12px black;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FEFEFE;
 }
 
 .overlay li {
@@ -247,7 +248,7 @@ text-shadow: 20px 12px 12px black;
 }
 
 .overlay a {
-    color: #FEFEFE;
+    color: black;
     text-decoration: none;
 }
 
@@ -267,7 +268,7 @@ text-shadow: 20px 12px 12px black;
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
 .eventcard p, h3{
-    color: #262F36
+    color: #262F36;
 }
 .Eventdescription{
     padding: 1.5em;
@@ -338,7 +339,7 @@ text-shadow: 20px 12px 12px black;
 
 .search {
     cursor: pointer;
-    color: #262F36
+    color: #262F36;
     padding: 2em;
     font-size: 1.5em;
     top: 80vh;
@@ -354,7 +355,7 @@ text-shadow: 20px 12px 12px black;
 }
 .signin{
     cursor: pointer;
-    color: #262F36
+    color: #262F36;
     padding: 2em;
     font-size: 1.5em;
     top: 85vh;
