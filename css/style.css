@@ -104,6 +104,12 @@ a:hover {
     position: absolute;
     width: 50%;
 }
+.open-btn{
+    position: relative;
+}
+.close-btn{
+    position: relative;
+}
 
 .mobilelogo {
     display: none;
@@ -241,7 +247,7 @@ text-shadow: 20px 12px 12px black;
 }
 
 .overlay a {
-    color: #FEFEFE;
+    color: black;
     text-decoration: none;
 }
 

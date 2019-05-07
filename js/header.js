@@ -24,7 +24,7 @@ openBtn.addEventListener("click", () => {
         openBtn.classList.add("hide");
         openBtn.classList.remove("close-btn");
         closeBtn.classList.remove("hide");
-    }, 1000);
+    }, 0);
 });
 
 closeBtn.addEventListener("click", () => {
@@ -35,5 +35,5 @@ closeBtn.addEventListener("click", () => {
         closeBtn.classList.add("hide");
         closeBtn.classList.add("close-btn");
         openBtn.classList.remove("hide");
-    }, 1000);
+    }, 0);
 });
