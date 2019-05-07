@@ -29,6 +29,8 @@ h5 {
     font-family: 'Avenir-bold', sans-serif;
 }
 
+/* Header */
+
 header {
     height: 120px;
     background-color: transparent;
@@ -39,24 +41,58 @@ header {
     right: 0;
 }
 
+/* Mobile Menu */
+
 .headerMobileOpen {
     height: 100vh;
     background: #fff;
 }
 
+.mobileLogo {
+    display: none;
+    float: left;
+    width: 162px;
+    height: 23px;
+    cursor: pointer;
+    padding: 1.5em 0 1.5em 1.5em;
+    z-index: 997;
+}
+
+.backButton {
+    display: none;
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 1.5em 0 1.5em 1.5em;
+    z-index: 996;
+}
+
+.arrow {
+    float: right;
+    display: none;
+    width: 25px;
+    height: 19px;
+    cursor: pointer;
+    padding: 1.5em 1.5em 1.5em 0;
+    z-index: 999;
+}
+
+.searchIcon {
+    display: none;
+    float: right;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    padding: 1.5em 1em 1.5em 0;
+    z-index: 998;
+}
+
+/* Mobile menu end */
+
 .headerContent {
     padding: 2.2em;
     position: sticky;
-}
-
-.lang {
-    cursor: pointer;
-    float: right;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
 }
 
 ul {
@@ -73,7 +109,7 @@ ul {
 }
 
 a:hover {
-    color: #ff0000;
+    color: #C52038;
 }
 
 .scrolled {
@@ -87,6 +123,8 @@ a:hover {
     background-color: #fff;
     position: static;
 }
+
+/* Header End */
 
 /*FRONTPAGE*/
 
@@ -165,10 +203,6 @@ a:hover {
     text-decoration: none;
 }
 
-.close-btn {
-    transform: rotate(90deg);
-}
-
 .hide {
     display: none !important;
 }
@@ -224,15 +258,6 @@ a:hover {
 .articlecontent h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
-}
-
-.arrow {
-    display: none;
-    width: 50px;
-    cursor: pointer;
-    padding: 2.5em;
-    float: left;
-    z-index: 999;
 }
 
 .search {
@@ -299,18 +324,47 @@ footer {
     font-size: 3em;
 }
 
-.eventDetailsType {
-    text-align: center;
+.movieIntroduction {
+    padding-top: 50px;
+    font-size: 1.em;
 }
 
 .eventDetailsDate {
-    text-align: center;
+    padding-top: 5px;
+}
+
+.eventDetailsType {
+    padding-top: 5px;
 }
 
 .eventDetailsDescription {
-    padding-top: 100px;
+    padding-top: 10px;
     max-width: 960px;
     margin: 0 auto;
+    font-size: 12px;
+    opacity: .75;
+    text-align: justify;
+    letter-spacing: .3px;
+}
+
+.seats {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em;
+    left: 1.5em;
+    width: calc(100% - 3em);
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #C52038;
+    font-size: .9em;
+    font-family: 'Avenir-bold', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(197, 32, 56, 0.25);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(197, 32, 56, 0.25);
+    box-shadow: 5px 5px 10px 0px rgba(197, 32, 56, 0.25);
 }
 
 .articleLink {
@@ -318,15 +372,63 @@ footer {
     text-decoration: none;
 }
 
+.mobileSorting {
+    margin: 150px 1.5em 0 1.5em;
+    display: none;
+}
+
+.movieGenres {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.mobileSorting ul {
+    display: inline-flex;
+}
+
+.mobileSorting li {
+    margin-top: 1em;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.mobileSorting li:hover {
+    color: #C52038;
+}
+
+.mobileSorting h2 {
+    font-size: 1.5em;
+}
+
+.eventMobile {
+    display: none;
+}
 
 @media screen and (max-width: 772px) {
 
-    .arrow {
-        display: block;
+    .header {
+        height: 70px;
     }
 
-    .nav-bar {
+    footer {
         display: none;
+    }
+
+    .nav-bar,
+    .logo,
+    .search,
+    .openSection,
+    .eventTitle {
+        display: none;
+    }
+
+    .backButton,
+    .mobileLogo,
+    .searchIcon,
+    .mobileSorting,
+    .mobilelogo,
+    .arrow {
+        display: block;
     }
 
     .openImage img {
@@ -335,26 +437,42 @@ footer {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    .search {
-        top: 85vh;
-        font-size: 1em;
+
+    .event {
+        margin: 1.5em 1.5em 100px 1.5em;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     }
 
-    .logo {
+    /* Events sub page */
+
+    .eventDetailsImage {
+        background-color: white;
+        margin-top: 65px;
+        height: 180px;
+    }
+
+    .eventDetails {
+        margin: 0;
+        padding: 50px 1.5em 0 1.5em;
+        border-radius: 10px 10px 0 0;
+        z-index: 85;
+        transform: translateY(-20px);
+        position: relative;
+        background-color: #fff;
+        background: #fff;
+
+    }
+
+    .eventDesktop {
         display: none;
     }
 
-    .mobilelogo {
+    .eventMobile {
         display: block;
     }
 
-    .arrow {
-        display: block;
-    }
-
-    .event {
-        margin: 1.5em;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    .eventDetailsTitle {
+        font-size: 1.5em;
     }
 
 }

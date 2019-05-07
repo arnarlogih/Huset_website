@@ -9,14 +9,15 @@
 </head>
 
 <header class="header">
-    <img class="arrow open-btn" src="img/burger_menu.svg" alt="H Menu logo" />
-    <img class="arrow close-btn hide" src="img/burger_menu.svg" alt="H Menu logo" />
+    <a href="index.html"><img class="backButton" src="img/back.svg" alt="back button" /></a>
+    <img class="arrow open-btn" src="img/burger_menu.svg" alt="burger Menu" />
+    <img class="arrow close-btn hide" src="img/burger_menu.svg" alt="Burger menu" />
+    <img class="searchIcon" src="img/search-icon.svg" alt="Search Icon" />
 
     <div class="overlay hide">
         <nav>
             <ul class="burger-bar" id="overlay">
                 <li><a href="index.html">Events</a></li>
-                <li><a href="#">Volunteer</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -26,8 +27,7 @@
     <div class="headerContent">
         <div>
             <ul class="nav-bar">
-                <li><a href="index.html">Events</a></li>
-                <li><a href="#">Volunteer</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -41,19 +41,23 @@
 
         <div class="eventDetailsImage">
             <img src="" alt="eventImage">
-            <h1 class="eventDetailsTitle">
-                title
-            </h1>
         </div>
 
         <section class="eventDetails">
+
+            <h1 class="eventDetailsTitle ">
+                title
+            </h1>
             <p class="eventDetailsType">
-                event type
+                Date:
             </p>
             <p class="eventDetailsDate">
-                12.03.1996
+                Director:
             </p>
 
+            <h2 class="movieIntroduction">
+                Movie introduction
+            </h2>
             <p class="eventDetailsDescription">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora veritatis voluptas possimus ullam,
                 asperiores laborum sint debitis. Hic, cum tempora! Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -61,6 +65,8 @@
                 asperiores laborum sint debitis. Hic, cum tempora!
             </p>
         </section>
+
+        <button class="seats">See Available Seats</button>
 
     </main>
 
