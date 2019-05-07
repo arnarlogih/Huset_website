@@ -1,4 +1,4 @@
-let fetchData = 'http://kea.sigurdarson.is/wp-huset/wp-json/wp/v2/concert?_embed';
+let fetchData = 'http://kea.sigurdarson.is/wp-huset/wp-json/wp/v2/film?_embed';
 const template = document.querySelector('template').content;
 const parent = document.querySelector('.event');
 
@@ -21,7 +21,7 @@ function show(data) {
         const eventType = clone.querySelector('article div .eventType');
         const title = clone.querySelector('article div h3');
         const eventDate = clone.querySelector('article div .date');
-        const eventPrice = clone.querySelector('article div div p');
+        //const eventPrice = clone.querySelector('article div div p');
 
         //Sending to subpage 
         articleLink.href = 'event.html?id=' + data.id;
@@ -32,11 +32,11 @@ function show(data) {
         //Event type
         eventType.textContent = data.event_type;
         //Event title
-        title.textContent = data.band_name;
+        title.textContent = data.film_title;
         //Event Date
         eventDate.textContent = data.date_and_time;
         //Event Price
-        eventPrice.textContent = data.price;
+        // eventPrice.textContent = data.price;
         //appending it to the main
         parent.appendChild(clone);
     });

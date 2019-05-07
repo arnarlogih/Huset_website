@@ -56,6 +56,9 @@ header {
     cursor: pointer;
     padding: 1.5em 0 1.5em 1.5em;
     z-index: 997;
+    position: relative;
+    animation: moveIn 1s forwards;
+    opacity: 0;
 }
 
 .backButton {
@@ -66,6 +69,25 @@ header {
     cursor: pointer;
     padding: 1.5em 0 1.5em 1.5em;
     z-index: 996;
+    position: relative;
+    animation: moveIn 1s forwards;
+    opacity: 0;
+}
+
+.backButton:hover {
+    transform: translateX(-5px) !important;
+}
+
+@keyframes moveIn {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .arrow {
@@ -76,6 +98,9 @@ header {
     cursor: pointer;
     padding: 1.5em 1.5em 1.5em 0;
     z-index: 999;
+    position: relative;
+    animation: moveIn 1s .6s forwards;
+    opacity: 0;
 }
 
 .searchIcon {
@@ -86,6 +111,8 @@ header {
     cursor: pointer;
     padding: 1.5em 1em 1.5em 0;
     z-index: 998;
+    animation: moveIn 1s .3s forwards;
+    opacity: 0;
 }
 
 /* Mobile menu end */
@@ -191,6 +218,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #fff;
 }
 
 .overlay li {
@@ -208,12 +236,13 @@ a:hover {
 }
 
 .eventcard {
-    cursor: pointer;
     position: relative;
     height: 320px;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    animation: moveIn 1s 1s forwards;
+    opacity: 0;
 }
 
 .date {
@@ -223,11 +252,11 @@ a:hover {
     opacity: .5;
 }
 
-.price {
+.bookmark {
+    cursor: pointer;
     position: absolute;
     bottom: 25px;
     right: 25px;
-    opacity: .5;
 }
 
 .eventType {
@@ -301,6 +330,8 @@ footer {
     align-items: center;
     overflow: hidden;
     position: relative;
+    animation: fadeIn 1s 1s forwards;
+    opacity: 0;
 }
 
 .eventDetailsImage img {
@@ -318,6 +349,18 @@ footer {
 
 .eventDetails {
     margin-top: 100px;
+    animation: fadeIn 1s .5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .eventDetailsTitle {
@@ -330,10 +373,10 @@ footer {
 }
 
 .eventDetailsDate {
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
-.eventDetailsType {
+.eventDetailsDirector {
     padding-top: 5px;
 }
 
@@ -365,6 +408,8 @@ footer {
     -webkit-box-shadow: 5px 5px 10px 0px rgba(197, 32, 56, 0.25);
     -moz-box-shadow: 5px 5px 10px 0px rgba(197, 32, 56, 0.25);
     box-shadow: 5px 5px 10px 0px rgba(197, 32, 56, 0.25);
+    animation: moveIn 1s 1s forwards;
+    opacity: 0;
 }
 
 .articleLink {
@@ -375,6 +420,8 @@ footer {
 .mobileSorting {
     margin: 150px 1.5em 0 1.5em;
     display: none;
+    animation: moveIn 1s .6s forwards;
+    opacity: 0;
 }
 
 .movieGenres {
